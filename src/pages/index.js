@@ -1,11 +1,10 @@
 import * as React from "react"
 
 const IndexPage = () => {
-  return (
-    <main>
-      <h1>Aqua Ultra Plus</h1>
-    </main>
-  )
+	return (
+		<main>
+		</main>
+	)
 }
 
 export default IndexPage
