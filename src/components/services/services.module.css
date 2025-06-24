@@ -1,0 +1,28 @@
+.container {
+    padding: 5%;
+}
+
+.headerContainer {
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-family: 'Saira';
+    font-size: 48px;
+    color: #083376;
+    font-weight: 600;
+}
+
+h3 {
+    font-family: 'Saira';
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;   
+}
+
+.serviceColumnText {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;  
+}
