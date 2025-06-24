@@ -1,0 +1,25 @@
+.container {
+    padding: 5%;
+}
+
+.headerContainer {
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-family: 'Saira';
+    font-size: 64px;
+    color: #083376;
+    font-weight: 600;
+}
+
+.textContainer {
+    max-width: 75%;
+}
+
+p {
+    font-family: 'Open Sans';
+    font-size: 24px;
+    color: #000;
+    font-weight: 400;
+}
