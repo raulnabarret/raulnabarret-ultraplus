@@ -12,6 +12,11 @@ h2 {
     color: #083376;
     font-weight: 600;
 }
+.icon {
+    color: #4392F1;
+    width: 50px;
+    height: 50px;
+}
 
 h3 {
     font-family: 'Saira';
