@@ -1,0 +1,69 @@
+.container {
+    padding: 5%;
+}
+
+.headerContainer {
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-family: 'Saira';
+    font-size: 48px;
+    color: #083376;
+    font-weight: 600;
+}
+
+.processImg {
+    margin-bottom: 24px;
+}
+
+.stepsColumnContainer {
+    padding: 0 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stepColumnContainer {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+}
+
+.stepHeaderContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.stepHeader {
+    line-height: 40px;
+}
+
+.stepText {
+    font-family: 'Open Sans'; 
+    font-size: 16px;
+    color: #000;
+    font-weight: 400; 
+}
+
+.numberIcon {
+    height: 40px;
+    width: auto;
+    margin-right: 5px;
+}
+
+.stepText {
+
+}
+
+@media screen and (max-width: 767px) { 
+    .stepsColumnContainer {
+        padding: 0;
+    }
+
+    .stepColumnContainer {
+        width: 80%;
+        margin: 0 auto 24px auto;
+    }
+}
