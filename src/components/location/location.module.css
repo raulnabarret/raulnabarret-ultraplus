@@ -1,0 +1,72 @@
+.container {
+    padding: 2.5% 5%;
+} 
+
+.headerContainer {
+    margin-bottom: 12px;
+}
+
+.columnsContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.mapContainer {
+    width: 60%;
+}
+
+.map {
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+}
+
+.infoContainer {
+    width: 40%;
+    padding: 0 2.5%;
+}
+
+.contactInformationContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 0 2.5%;
+}
+
+.contactInformationIndividualContainer {
+    margin-bottom: 12px;
+}
+
+.contactInformationDay {
+    font-weight: 600;
+}
+
+.contactInformationText {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+}
+
+.contactInformationText a {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) { 
+    .columnsContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .mapContainer,
+    .infoContainer {
+        width: 100%;
+    }
+
+    .infoContainer {
+        padding: 5% 0;
+        text-align: center;
+    }
+
+}
