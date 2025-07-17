@@ -1,0 +1,52 @@
+.container {
+    padding: 2.5% 5%;
+} 
+
+.headerContainer {
+    margin-bottom: 12px;
+}
+
+.formIntroductionText {
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.formContainer {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+input,
+textarea {
+    border: 1px solid #888;
+    border-radius: 4px;
+}
+
+.submitButtonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.submitButtonContainer button {
+    background-color: #4392F1;
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    width: 150px;
+}
+
+@media screen and (max-width: 767px) { 
+    .formContainer {
+        width: 75%;
+    }
+}

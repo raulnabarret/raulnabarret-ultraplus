@@ -4,6 +4,7 @@ import Banner from '../components/banner/banner';
 import Services from "../components/services/services";
 import Process from "../components/process/process";
 import Location from '../components/location/location';
+import Contact from '../components/contact/contact';
 
 const IndexPage = () => {
 	return (
@@ -13,6 +14,7 @@ const IndexPage = () => {
 			<Services></Services> 
 			<Process></Process>
 			<Location></Location>
+			<Contact></Contact>
 		</main>
 	)
 }
