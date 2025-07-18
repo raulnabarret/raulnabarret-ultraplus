@@ -13,7 +13,7 @@ function Contact() {
                 <p className={styles.formIntroductionText}>Escríbenos un mensaje con tus dudas y comentarios y nosotros nos pondremos en contacto contigo</p>
                 <div className={styles.formContainer}>
                     <h3>Envíanos un mensaje</h3>
-                    <form name="contact" method="POST" netlify>
+                    <form name="contact" netlify>
                         <div className={styles.inputContainer}>
                             <label>Nombre</label>
                             <input type='text'></input>
