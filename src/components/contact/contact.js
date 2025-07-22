@@ -1,7 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import * as styles from "./contact.module.css"
 
+
+
+    const handleSubmit = event => {
+
+        event.preventDefault();
+
+        const myForm = event.target;
+        const formData = new FormData(myForm);
+        console.log(formData.values().toArray());
+
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString()
+        })
+            .then(() => console.log("Thank you for your submission"))
+            .catch(error => alert(error));
+    };
+    
 function Contact() {
+    useEffect(() => {
+        document.querySelector("form").addEventListener("submit", handleSubmit);
+    })
+
     return (
         <div className={styles.container}>
             <div>
@@ -15,24 +38,24 @@ function Contact() {
                     <h3>Envíanos un mensaje</h3>
                     <form 
                         name='contact' 
-                        action='/success/' 
+                         
                         method='POST' 
                         data-netlify='true'>
                         <div className={styles.inputContainer}>
                             <label>Nombre</label>
-                            <input type='text'></input>
+                            <input name='name' type='text'></input>
                         </div>
                         <div className={styles.inputContainer}>
                             <label>Teléfono</label>
-                            <input type='phone'></input>
+                            <input name='phone' type='tel'></input>
                         </div>
                         <div className={styles.inputContainer}>
                             <label>Email</label>
-                            <input type='email'></input>
+                            <input name='email' type='email'></input>
                         </div>
                         <div className={styles.inputContainer}>
                             <label>Mensaje</label>
-                            <textarea></textarea>
+                            <textarea name='message'></textarea>
                         </div>
                         <div className={styles.submitButtonContainer}>
                             <button type='submit'>Enviar</button>
@@ -41,7 +64,7 @@ function Contact() {
                 </div>
             </div>
             
-        </div>
+        </div> 
     )
 }
 
