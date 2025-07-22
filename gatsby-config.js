@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `ultraplus`,
+    title: `Aqua Ultra Plus`,
     siteUrl: `https://www.aquaultraplus.com`,
   },
   plugins: [
