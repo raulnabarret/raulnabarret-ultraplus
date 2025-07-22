@@ -4,26 +4,25 @@ import { navigate } from "gatsby"
 
 
 
-    const handleSubmit = event => {
+const handleSubmit = event => {
 
-        event.preventDefault();
+    event.preventDefault();
 
-        const myForm = event.target;
-        const formData = new FormData(myForm);
-        console.log(formData.values().toArray());
+    const myForm = event.target;
+    const formData = new FormData(myForm);
 
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString()
-        })
-            .then(() => {
-                console.log("Thank you for your submission");
-                      navigate("/success/")
-
-            })
-            .catch(error => alert(error));
-    };
+    fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString()
+    })
+    .then(() => {
+        navigate('/success/');
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+};
     
 function Contact() {
     useEffect(() => {
@@ -43,9 +42,10 @@ function Contact() {
                     <h3>Envíanos un mensaje</h3>
                     <form 
                         name='contact' 
-                         
                         method='POST' 
-                        data-netlify='true'>
+                        data-netlify='true'
+                        onSubmit={handleSubmit}>
+                        <input type="hidden" name="form-name" value="contact" />
                         <div className={styles.inputContainer}>
                             <label>Nombre</label>
                             <input name='name' type='text'></input>
