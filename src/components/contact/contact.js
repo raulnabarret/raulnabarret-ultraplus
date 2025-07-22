@@ -15,7 +15,7 @@ function Contact() {
                     <h3>Envíanos un mensaje</h3>
                     <form 
                         name='contact' 
-                        action='/success'
+                        action='/success/'
                         method='POST' 
                         data-netlify='true'>
                         <div className={styles.inputContainer}>
