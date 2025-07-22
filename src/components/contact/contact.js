@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import * as styles from "./contact.module.css"
+import { navigate } from "gatsby"
 
 
 
@@ -16,7 +17,11 @@ import * as styles from "./contact.module.css"
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams(formData).toString()
         })
-            .then(() => console.log("Thank you for your submission"))
+            .then(() => {
+                console.log("Thank you for your submission");
+                      navigate("/success/")
+
+            })
             .catch(error => alert(error));
     };
     
