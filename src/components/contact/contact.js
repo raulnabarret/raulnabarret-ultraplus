@@ -5,9 +5,6 @@ import { navigate } from "gatsby"
 
 
 const handleSubmit = event => {
-
-    console.log('submit')
-
     event.preventDefault();
 
     const myForm = event.target;
