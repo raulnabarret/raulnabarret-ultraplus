@@ -17,7 +17,7 @@ const handleSubmit = event => {
         body: new URLSearchParams(formData).toString()
     })
     .then(() => {
-        navigate('/success/');
+        navigate('/formulario-enviado/');
     })
     .catch((error) => {
         console.log(error);

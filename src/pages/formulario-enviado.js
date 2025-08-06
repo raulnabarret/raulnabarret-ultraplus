@@ -1,8 +1,10 @@
 import * as React from "react"
+import Navbar from "../components/navbar"
 
 const SuccessPage = () => {
 	return (
 		<main>
+            <Navbar></Navbar>
             <p>success!</p>
 		</main>
 	)
