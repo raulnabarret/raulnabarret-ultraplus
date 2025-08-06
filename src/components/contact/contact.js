@@ -6,6 +6,8 @@ import { navigate } from "gatsby"
 
 const handleSubmit = event => {
 
+    console.log('submit')
+
     event.preventDefault();
 
     const myForm = event.target;
@@ -25,10 +27,6 @@ const handleSubmit = event => {
 };
     
 function Contact() {
-    useEffect(() => {
-        document.querySelector("form").addEventListener("submit", handleSubmit);
-    })
-
     return (
         <div className={styles.container}>
             <div>
