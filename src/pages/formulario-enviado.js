@@ -12,4 +12,9 @@ const SuccessPage = () => {
 
 export default SuccessPage
 
-export const Head = () => <title>Aqua Ultra Plus · Formulario enviado</title>
+export const Head = () => (
+	<>
+		<title>Aqua Ultra Plus · Formulario enviado</title>
+		<meta name="google-site-verification" content="A26tHKjKCnwYUOAUeQOoyvlvap_V9sfvKbu7Vc9qeaA" />
+	</>
+)

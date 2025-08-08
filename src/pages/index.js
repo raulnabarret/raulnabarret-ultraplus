@@ -21,4 +21,9 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Aqua Ultra Plus</title>
+export const Head = () => (
+	<>
+		<title>Aqua Ultra Plus</title>
+		<meta name="google-site-verification" content="A26tHKjKCnwYUOAUeQOoyvlvap_V9sfvKbu7Vc9qeaA" />
+	</>
+)
