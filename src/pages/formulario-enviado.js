@@ -1,11 +1,12 @@
 import * as React from "react"
-import Navbar from "../components/navbar"
+import Navbar from '../components/navbar'
+import Success from '../components/success/success' 
 
 const SuccessPage = () => {
 	return (
 		<main>
             <Navbar></Navbar>
-            <p>success!</p>
+			<Success></Success>
 		</main>
 	)
 }

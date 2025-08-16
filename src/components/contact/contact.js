@@ -2,8 +2,6 @@ import React, { useEffect } from 'react';
 import * as styles from "./contact.module.css"
 import { navigate } from "gatsby"
 
-
-
 const handleSubmit = event => {
     event.preventDefault();
 
