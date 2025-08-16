@@ -27,7 +27,7 @@ export const Head = () => (
 		<meta name="google-site-verification" content="A26tHKjKCnwYUOAUeQOoyvlvap_V9sfvKbu7Vc9qeaA" />
 		<meta 
 			name="description" 
-			content="Somos una purificadora de agua potable con más de 30 años de servicio en Tampico.
+			content="Aqua Ultra Plus es una purificadora de agua potable con más de 30 años de servicio en Tampico.
 			Ofrecemos venta de agua purificada al público en general en nuestra sucursal, 
 			así como servicio a domicilio en tu hogar y oficina o negocio." 
 		/>
