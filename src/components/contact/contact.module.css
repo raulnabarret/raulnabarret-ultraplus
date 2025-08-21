@@ -46,7 +46,21 @@ textarea {
 }
 
 @media screen and (max-width: 767px) { 
-    .formContainer {
-        width: 75%;
+    .container {
+        padding-bottom: 10%;
+    } 
+
+    .headerContainer {
+        text-align: center;
     }
+
+    .formContainer {
+        width: 85%;
+    }
+
+    .submitButtonContainer {
+        margin-top: 16px;
+    }
+
+
 }

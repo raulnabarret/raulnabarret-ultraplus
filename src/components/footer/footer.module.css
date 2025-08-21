@@ -26,5 +26,17 @@
 .socialNetworkIcon {
     width: 16px;
     height: 16px;
-    
+}
+
+@media screen and (max-width: 767px) { 
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 2em;
+        text-align: center;
+    }
+
+    .socialNetworkIcon {
+        margin: 0 auto;
+    }
 }

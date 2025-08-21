@@ -5,6 +5,38 @@ import logo from '../images/Aqua-Logo.png';
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const mobileQuery = window.matchMedia("(width >= 48rem)");
+    // Function to handle breakpoint changes
+    function handleBreakpointChange() {
+        const body = document.querySelector('body');
+        if (mobileQuery.matches && isMenuOpen) {
+            console.log("Current breakpoint: Mobile");
+            body.style.overflow = 'scroll';
+        } else {
+                    body.style.overflow = 'hidden';
+
+        }
+    }
+
+  // Initial check on page load
+  handleBreakpointChange();
+
+  // Add listeners for changes in the media queries
+  mobileQuery.addEventListener("change", handleBreakpointChange);
+
+
+    if(isMenuOpen) {
+        const body = document.querySelector('body');
+
+
+        body.style.overflow = 'hidden';
+    
+    } else {
+
+        const body = document.querySelector('body');
+        body.style.overflow = 'scroll';
+    }
     
     function handleBurgerButtonClick() {
         setIsMenuOpen(!isMenuOpen);
@@ -41,12 +73,12 @@ function Navbar() {
                         <span class="absolute -inset-0.5"></span>
                         <span class="sr-only">Open main menu</span>
                         {!isMenuOpen && (
-                            <svg class=" size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                            <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                             </svg>
                         )}
                         {isMenuOpen && (
-                            <svg class=" size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                            <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                             </svg>
                         )}

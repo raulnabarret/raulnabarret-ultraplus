@@ -59,6 +59,10 @@
         flex-direction: column;
     }
     
+    .headerContainer {
+        text-align: center;
+    }
+    
     .mapContainer,
     .infoContainer {
         width: 100%;
