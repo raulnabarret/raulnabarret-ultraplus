@@ -5,6 +5,7 @@ import Services from "../components/services/services";
 import Process from "../components/process/process";
 import Location from '../components/location/location';
 import Contact from '../components/contact/contact';
+import Footer from '../components/footer/footer';
 
 const IndexPage = () => {
 	return (
@@ -15,6 +16,7 @@ const IndexPage = () => {
 			<Process></Process>
 			<Location></Location>
 			<Contact></Contact>
+			<Footer></Footer>
 		</main>
 	)
 }

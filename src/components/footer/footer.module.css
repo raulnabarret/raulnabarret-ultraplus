@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    background: #083376;
+    position: static;
+    bottom: 0;
+    padding: 4em;
+}
+
+.containerColumn {
+    color: #fff;
+    font-size: 12px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.containerColumn a {
+    text-decoration: underline;
+}
+
+.socialNetworkIcon {
+    width: 16px;
+    height: 16px;
+    
+}

@@ -1,12 +1,14 @@
 import * as React from "react"
 import Navbar from '../components/navbar'
 import Success from '../components/success/success' 
+import Footer from '../components/footer/footer';
 
 const SuccessPage = () => {
 	return (
 		<main>
             <Navbar></Navbar>
 			<Success></Success>
+			<Footer></Footer>
 		</main>
 	)
 }
