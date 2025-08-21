@@ -1,0 +1,38 @@
+.container {
+    display: block;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 4em 0;
+}
+
+.container h1 {
+    line-height: 1.25;
+    margin-bottom: 0.25em;
+}
+
+.policyContainer {
+    margin-bottom: 1.5em;
+}
+
+.policyContainer h2 {
+    font-size: 24px;
+}
+.policyContainer p { 
+    font-size: 16px;
+}
+
+.policyContainer ul li {
+    list-style-type: disc;
+    margin-left: 32px;
+}
+
+.policyContainer:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) { 
+    .container {
+        max-width: 90%;
+        padding: 2em 0;
+    }
+}
