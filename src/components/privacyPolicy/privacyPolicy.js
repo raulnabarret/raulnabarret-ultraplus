@@ -4,7 +4,7 @@ import * as styles from './privacyPolicy.module.css';
 function PrivacyPolicy() { 
     return (
         <div className={styles.container}>
-            <h1>Políticas de Privacidad</h1>
+            <h1>Política de Privacidad</h1>
             <div>
                 <div className={styles.policyContainer}>
                     <p><strong>Aqua Ultra Plus</strong> (en adelante, “nosotros” o “el Responsable”) reconoce la importancia de proteger tus datos personales y se compromete a tratarlos conforme a la <strong>Nueva Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)</strong>, que entró en vigor el <strong>21 de marzo de 2025</strong>.</p>

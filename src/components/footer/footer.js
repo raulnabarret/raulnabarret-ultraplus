@@ -8,7 +8,7 @@ function Footer() {
     return (
         <div className={styles.container}>
             <div className={styles.containerColumn}>
-                <a href='/politica-privacidad' target='_blank'>Políticas de Privacidad</a>
+                <a href='/politica-privacidad' target='_blank'>Política de Privacidad</a>
             </div>
             <div className={styles.containerColumn} >
                 <div>
