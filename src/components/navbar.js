@@ -13,10 +13,12 @@ function Navbar() {
         } else {
             body.style.overflow = 'scroll';
         }
+
         handleBreakpointChange();
-        mobileQuery.addEventListener("change", handleBreakpointChange());
+        mobileQuery.addEventListener("change", handleBreakpointChange);
 
         function handleBreakpointChange() {
+            console.log(mobileQuery.matches)
             if (mobileQuery.matches && isMenuOpen) {
                 body.style.overflow = 'scroll';
             } else if (!mobileQuery.matches && isMenuOpen) {
