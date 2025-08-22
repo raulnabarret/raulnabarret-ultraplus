@@ -36,4 +36,16 @@ h3 {
     .headerContainer {
         text-align: center;
     }
+
+    .serviceColumnHeader {
+        text-align: center;
+    }
+
+    .serviceColumnHeader svg {
+        margin: 0 auto;
+    }
+
+    .serviceColumnText {
+        text-align: center;
+    }
 }

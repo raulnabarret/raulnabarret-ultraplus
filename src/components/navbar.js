@@ -5,38 +5,23 @@ import logo from '../images/Aqua-Logo.png';
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
     const mobileQuery = window.matchMedia("(width >= 48rem)");
-    // Function to handle breakpoint changes
-    function handleBreakpointChange() {
-        const body = document.querySelector('body');
-        if (mobileQuery.matches && isMenuOpen) {
-            console.log("Current breakpoint: Mobile");
-            body.style.overflow = 'scroll';
-        } else {
-                    body.style.overflow = 'hidden';
+    const body = document.querySelector('body');
 
+    function handleBreakpointChange() {
+        if (mobileQuery.matches && isMenuOpen) {
+            body.style.overflow = 'scroll';
+        } else if (!mobileQuery.matches && isMenuOpen) {
+            body.style.overflow = 'hidden';
+        } else if (mobileQuery.matches && !isMenuOpen) {
+            body.style.overflow = 'scroll';
+        } else if (!mobileQuery.matches && !isMenuOpen) {
+            body.style.overflow = 'scroll';
         }
     }
 
-  // Initial check on page load
-  handleBreakpointChange();
-
-  // Add listeners for changes in the media queries
-  mobileQuery.addEventListener("change", handleBreakpointChange);
-
-
-    if(isMenuOpen) {
-        const body = document.querySelector('body');
-
-
-        body.style.overflow = 'hidden';
-    
-    } else {
-
-        const body = document.querySelector('body');
-        body.style.overflow = 'scroll';
-    }
+    handleBreakpointChange();
+    mobileQuery.addEventListener("change", handleBreakpointChange);
     
     function handleBurgerButtonClick() {
         setIsMenuOpen(!isMenuOpen);
@@ -44,6 +29,12 @@ function Navbar() {
 
     function handleMobileLinkClicked() {
         setIsMenuOpen(false);
+    }
+
+    if(isMenuOpen) {
+        body.style.overflow = 'hidden';
+    } else {
+        body.style.overflow = 'scroll';
     }
     
     return (

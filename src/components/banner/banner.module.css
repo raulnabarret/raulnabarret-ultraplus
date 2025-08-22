@@ -23,3 +23,17 @@ p {
     color: #000;
     font-weight: 400;
 }
+
+@media screen and (max-width: 767px) { 
+    .headerContainer h1 {
+        text-align: center;
+    }
+
+    .textContainer {
+        max-width: 100%;
+    }
+
+    .textContainer p {
+        text-align: center;
+    }
+}
