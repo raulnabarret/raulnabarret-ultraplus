@@ -6,6 +6,9 @@ module.exports = {
     title: `Aqua Ultra Plus`,
     siteUrl: `https://www.aquaultraplus.com`,
   },
+  flags: {
+    DEV_SSR: true
+  },
   plugins: [
     'gatsby-plugin-postcss',
     {
