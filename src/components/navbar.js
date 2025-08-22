@@ -10,10 +10,11 @@ function Navbar() {
         handleBreakpointChange();
         mobileQuery.addEventListener("change", handleBreakpointChange);
     }
-    if (typeof body !== 'undefined') {
-        const body = document.querySelector('body');
-    }
+
     function handleBreakpointChange() {
+        if (typeof body !== 'undefined') {
+            const body = document.querySelector('body');
+        }
         if (mobileQuery.matches && isMenuOpen) {
             body.style.overflow = 'scroll';
         } else if (!mobileQuery.matches && isMenuOpen) {
@@ -35,10 +36,13 @@ function Navbar() {
         setIsMenuOpen(false);
     }
 
-    if(isMenuOpen) {
-        body.style.overflow = 'hidden';
-    } else {
-        body.style.overflow = 'scroll';
+    if (typeof body !== 'undefined') {
+        const body = document.querySelector('body');
+        if(isMenuOpen) {
+            body.style.overflow = 'hidden';
+        } else {
+            body.style.overflow = 'scroll';
+        }
     }
     
     return (
