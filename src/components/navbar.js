@@ -6,12 +6,12 @@ import logo from '../images/Aqua-Logo.png';
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     if (typeof window !== 'undefined') {
-        const mobileQuery = window?.matchMedia("(width >= 48rem)");
+        const mobileQuery = window.matchMedia("(width >= 48rem)");
         handleBreakpointChange();
-        mobileQuery.addEventListener("change", handleBreakpointChange);
+        mobileQuery.addEventListener("change", handleBreakpointChange(mobileQuery));
     }
 
-    function handleBreakpointChange() {
+    function handleBreakpointChange(mobileQuery) {
         if (typeof body !== 'undefined') {
             const body = document.querySelector('body');
         }
