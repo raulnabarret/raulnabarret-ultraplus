@@ -6,9 +6,6 @@ module.exports = {
     title: `Aqua Ultra Plus`,
     siteUrl: `https://www.aquaultraplus.com`,
   },
-  flags: {
-    DEV_SSR: true
-  },
   plugins: [
     'gatsby-plugin-postcss',
     {
@@ -26,6 +23,15 @@ module.exports = {
             file: `https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap`,
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Aqua Ultra Plus`,
+        short_name: `Aqua Ultra Plus`,
+        start_url: `/`,
+        icon: `src/images/favicon/favicon-16x16.png`
       },
     },
   ],
