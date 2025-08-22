@@ -5,30 +5,31 @@ import logo from '../images/Aqua-Logo.png';
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    if (typeof window !== 'undefined') {
+    if (typeof window !== 'undefined' && typeof document !== 'undefined') {
         const mobileQuery = window.matchMedia("(width >= 48rem)");
-        handleBreakpointChange();
-        mobileQuery.addEventListener("change", handleBreakpointChange(mobileQuery));
-    }
-
-    function handleBreakpointChange(mobileQuery) {
-        let body;
-        if (typeof document !== 'undefined') {
-            body = document.querySelector('body');
-        }
-        if (mobileQuery.matches && isMenuOpen) {
-            body.style.overflow = 'scroll';
-        } else if (!mobileQuery.matches && isMenuOpen) {
+        const body = document.querySelector('body');
+        if(isMenuOpen) {
             body.style.overflow = 'hidden';
-        } else if (mobileQuery.matches && !isMenuOpen) {
-            body.style.overflow = 'scroll';
-        } else if (!mobileQuery.matches && !isMenuOpen) {
+        } else {
             body.style.overflow = 'scroll';
         }
+        handleBreakpointChange();
+        mobileQuery.addEventListener("change", handleBreakpointChange());
+
+        function handleBreakpointChange() {
+            if (mobileQuery.matches && isMenuOpen) {
+                body.style.overflow = 'scroll';
+            } else if (!mobileQuery.matches && isMenuOpen) {
+                body.style.overflow = 'hidden';
+            } else if (mobileQuery.matches && !isMenuOpen) {
+                body.style.overflow = 'scroll';
+            } else if (!mobileQuery.matches && !isMenuOpen) {
+                body.style.overflow = 'scroll';
+            }
+        }
+
     }
 
-
-    
     function handleBurgerButtonClick() {
         setIsMenuOpen(!isMenuOpen);
     }
@@ -37,15 +38,6 @@ function Navbar() {
         setIsMenuOpen(false);
     }
 
-    if (typeof body !== 'undefined') {
-        const body = document.querySelector('body');
-        if(isMenuOpen) {
-            body.style.overflow = 'hidden';
-        } else {
-            body.style.overflow = 'scroll';
-        }
-    }
-    
     return (
         <div className={navbarStyles.navbarContainer}>
             <div>
