@@ -7,6 +7,7 @@ module.exports = {
     siteUrl: `https://www.aquaultraplus.com`,
   },
   plugins: [
+    'gatsby-plugin-smoothscroll',
     'gatsby-plugin-postcss',
     {
       resolve: `gatsby-omni-font-loader`,

@@ -14,7 +14,7 @@ const IndexPage = () => {
 			<Banner></Banner>
 			<Services></Services> 
 			<Process></Process>
-			<Location></Location>
+			<Location></Location> 
 			<Contact></Contact>
 			<Footer></Footer>
 		</main>
