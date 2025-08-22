@@ -12,8 +12,9 @@ function Navbar() {
     }
 
     function handleBreakpointChange(mobileQuery) {
-        if (typeof body !== 'undefined') {
-            const body = document.querySelector('body');
+        let body;
+        if (typeof document !== 'undefined') {
+            body = document.querySelector('body');
         }
         if (mobileQuery.matches && isMenuOpen) {
             body.style.overflow = 'scroll';
