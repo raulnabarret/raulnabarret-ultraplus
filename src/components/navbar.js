@@ -10,8 +10,9 @@ function Navbar() {
         handleBreakpointChange();
         mobileQuery.addEventListener("change", handleBreakpointChange);
     }
-    const body = document.querySelector('body');
-
+    if (typeof body !== 'undefined') {
+        const body = document.querySelector('body');
+    }
     function handleBreakpointChange() {
         if (mobileQuery.matches && isMenuOpen) {
             body.style.overflow = 'scroll';
