@@ -5,7 +5,11 @@ import logo from '../images/Aqua-Logo.png';
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const mobileQuery = window?.matchMedia("(width >= 48rem)");
+    if (typeof window !== 'undefined') {
+        const mobileQuery = window?.matchMedia("(width >= 48rem)");
+        handleBreakpointChange();
+        mobileQuery.addEventListener("change", handleBreakpointChange);
+    }
     const body = document.querySelector('body');
 
     function handleBreakpointChange() {
@@ -20,8 +24,7 @@ function Navbar() {
         }
     }
 
-    handleBreakpointChange();
-    mobileQuery.addEventListener("change", handleBreakpointChange);
+
     
     function handleBurgerButtonClick() {
         setIsMenuOpen(!isMenuOpen);

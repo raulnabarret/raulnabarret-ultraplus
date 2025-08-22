@@ -1,13 +1,13 @@
 import * as React from "react"
 import Navbar from '../components/navbar'
 import Footer from '../components/footer/footer';
-// import PrivacyPolicy from "../components/privacyPolicy/privacyPolicy";
+import PrivacyPolicy from "../components/privacyPolicy/privacyPolicy";
 
 const PoliticaPrivacidadPage = () => {
 	return (
         <main>
             <Navbar></Navbar>
-            {/* <PrivacyPolicy></PrivacyPolicy> */}
+            <PrivacyPolicy></PrivacyPolicy>
             <Footer></Footer>
         </main>
 	)
