@@ -5,7 +5,7 @@ import logo from '../images/Aqua-Logo.png';
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const mobileQuery = window.matchMedia("(width >= 48rem)");
+    const mobileQuery = window?.matchMedia("(width >= 48rem)");
     const body = document.querySelector('body');
 
     function handleBreakpointChange() {
