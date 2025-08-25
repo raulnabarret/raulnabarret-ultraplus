@@ -25,10 +25,10 @@ const codeStyles = {
 
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
+    <main>
+      <h1>Página no encontrada</h1>
+      <p>
+        Lo sentimos😔, no hemos podido encontrar la página ingresada
         <br />
         {process.env.NODE_ENV === "development" ? (
           <>
@@ -38,7 +38,7 @@ const NotFoundPage = () => {
           </>
         ) : null}
         <br />
-        <Link to="/">Go home</Link>.
+        <Link to="/">Ir al inicio</Link>.
       </p>
     </main>
   )
@@ -46,4 +46,4 @@ const NotFoundPage = () => {
 
 export default NotFoundPage
 
-export const Head = () => <title>Not found</title>
+export const Head = () => <title>Aqua Ultra Plus | Tampico · Página no encontrada</title>

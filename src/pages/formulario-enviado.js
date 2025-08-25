@@ -17,7 +17,7 @@ export default SuccessPage
 
 export const Head = () => (
 	<>
-		<title>Aqua Ultra Plus · Formulario enviado</title>
+		<title>Aqua Ultra Plus | Tampico · Formulario enviado</title>
 		<meta name="google-site-verification" content="A26tHKjKCnwYUOAUeQOoyvlvap_V9sfvKbu7Vc9qeaA" />
 	</>
 )

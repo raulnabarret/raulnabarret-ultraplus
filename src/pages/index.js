@@ -25,7 +25,7 @@ export default IndexPage
 
 export const Head = () => (
 	<>
-		<title>Aqua Ultra Plus</title>
+		<title>Aqua Ultra Plus | Tampico</title>
 		<meta name="google-site-verification" content="A26tHKjKCnwYUOAUeQOoyvlvap_V9sfvKbu7Vc9qeaA" />
 		<meta 
 			name="description" 
