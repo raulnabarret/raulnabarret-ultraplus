@@ -10,6 +10,7 @@ module.exports = {
     'gatsby-plugin-smoothscroll',
     'gatsby-plugin-postcss',
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-robots-txt',
     {
       resolve: `gatsby-omni-font-loader`,
       options: {
