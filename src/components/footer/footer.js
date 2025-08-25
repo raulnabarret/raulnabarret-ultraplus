@@ -8,16 +8,16 @@ function Footer() {
     return (
         <div className={styles.container}>
             <div className={styles.containerColumn}>
-                <a href='/politica-privacidad' target='_blank'>Política de Privacidad</a>
+                <a title="Política de Privacidad" href='/politica-privacidad' target='_blank'>Política de Privacidad</a>
             </div>
             <div className={styles.containerColumn} >
                 <div>
                     <span>© {currentYear}. Aqua Ultra Plus · Sitio desarrollado por&nbsp;</span>
-                    <a target='_blank' href='https://raulnabarret.com'>Raúl Nabarret</a>
+                    <a title="Website Raúl Nabarret" target='_blank' href='https://raulnabarret.com'>Raúl Nabarret</a>
                 </div>
             </div>
             <div className={styles.containerColumn}>
-                <a target='_blank' href='https://www.facebook.com/AquaUltraPlus'>
+                <a title="Facebook Aqua Ultra Plus" target='_blank' href='https://www.facebook.com/AquaUltraPlus'>
                     <svg
                         className={styles.socialNetworkIcon}
                         xmlns="http://www.w3.org/2000/svg"

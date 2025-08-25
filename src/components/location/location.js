@@ -40,7 +40,7 @@ function Location() {
                         <div className={styles.contactInformationIndividualContainer}>
                             <h3>Teléfono</h3>
                             <p className={styles.contactInformationText}>
-                                <a href='tel:528333140412'>(833) 314-0412</a>
+                                <a title="Teléfono Aqua Ultra Plus" href='tel:528333140412'>(833) 314-0412</a>
                             </p>
                         </div>
                     </div>
