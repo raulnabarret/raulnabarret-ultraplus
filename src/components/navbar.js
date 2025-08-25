@@ -64,16 +64,16 @@ function Navbar() {
             {inHomePage && (
                 <div className={navbarStyles.navbarLinksContainerDesktop}>
                     <div className={navbarStyles.linkContainer}>
-                        <a href="" className={navbarStyles.link} onClick={handleLinkClick}>Servicios</a>
+                        <a className={navbarStyles.link} onClick={handleLinkClick}>Servicios</a>
                     </div>
                     <div className={navbarStyles.linkContainer}> 
-                        <a href="" className={navbarStyles.link} onClick={handleLinkClick}>Proceso</a>
+                        <a className={navbarStyles.link} onClick={handleLinkClick}>Proceso</a>
                     </div>
                     <div className={navbarStyles.linkContainer}>
-                        <a href="" className={navbarStyles.link} onClick={handleLinkClick}>Ubicación</a>
+                        <a className={navbarStyles.link} onClick={handleLinkClick}>Ubicación</a>
                     </div>
                     <div className={navbarStyles.linkContainer}>
-                        <a href="" className={navbarStyles.cta} onClick={handleLinkClick}>Contáctanos</a>
+                        <a className={navbarStyles.cta} onClick={handleLinkClick}>Contáctanos</a>
                     </div>
                 </div>
             )}
@@ -100,16 +100,16 @@ function Navbar() {
             {inHomePage && isMenuOpen && (
                 <div className={navbarStyles.navbarLinksContainerMobile}> 
                     <div className={navbarStyles.linkContainer}>
-                        <a href="" className={navbarStyles.link} onClick={handleMobileLinkClicked} data-container="servicios-module--container">Servicios</a>
+                        <a className={navbarStyles.link} onClick={handleMobileLinkClicked} data-container="servicios-module--container">Servicios</a>
                     </div>
                     <div className={navbarStyles.linkContainer}>
-                        <a href="" className={navbarStyles.link} onClick={handleMobileLinkClicked} data-container="proceso-module--container">Proceso</a>
+                        <a className={navbarStyles.link} onClick={handleMobileLinkClicked} data-container="proceso-module--container">Proceso</a>
                     </div>
                     <div className={navbarStyles.linkContainer}>
-                        <a href="" className={navbarStyles.link} onClick={handleMobileLinkClicked} data-container="ubicacion-module--container">Ubicación</a>
+                        <a className={navbarStyles.link} onClick={handleMobileLinkClicked} data-container="ubicacion-module--container">Ubicación</a>
                     </div>
                     <div className={navbarStyles.linkContainer}>
-                        <a href="" className={navbarStyles.link} onClick={handleMobileLinkClicked} data-container="contactanos-module--container">Contáctanos</a>
+                        <a className={navbarStyles.link} onClick={handleMobileLinkClicked} data-container="contactanos-module--container">Contáctanos</a>
                     </div>
                 </div>
             )}
