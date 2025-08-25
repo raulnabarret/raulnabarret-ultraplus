@@ -4,11 +4,12 @@
 module.exports = {
   siteMetadata: {
     title: `Aqua Ultra Plus`,
-    siteUrl: `https://www.aquaultraplus.com`,
+    siteUrl: `https://aquaultraplus.com`,
   },
   plugins: [
     'gatsby-plugin-smoothscroll',
     'gatsby-plugin-postcss',
+    'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-omni-font-loader`,
       options: {
