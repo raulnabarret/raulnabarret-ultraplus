@@ -1,4 +1,6 @@
 import * as React from "react"
+import Navbar from "../components/navbar"
+import Footer from '../components/footer/footer';
 import { Link } from "gatsby"
 
 const pageStyles = {
