@@ -58,7 +58,7 @@ function Navbar() {
         <div className={navbarStyles.navbarContainer}>
             <div>
                 <a href="/">
-                    <img className={navbarStyles.logo} src={logo}></img>
+                    <img alt="Logo Aqua Ultra Plus" className={navbarStyles.logo} src={logo}></img>
                 </a>                
             </div>
             {inHomePage && (

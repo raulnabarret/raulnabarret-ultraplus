@@ -38,9 +38,9 @@ function Location() {
                             </p>
                         </div>
                         <div className={styles.contactInformationIndividualContainer}>
-                            <h3>Teléfono / WhatsApp</h3>
+                            <h3>Teléfono</h3>
                             <p className={styles.contactInformationText}>
-                                <a target='_blank' href='https://wa.me/528331234567'>(833) 123-4567</a>
+                                <a href='tel:528333140412'>(833) 314-0412</a>
                             </p>
                         </div>
                     </div>

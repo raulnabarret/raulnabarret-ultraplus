@@ -26,6 +26,8 @@ const codeStyles = {
 const NotFoundPage = () => {
   return (
     <main>
+      <Navbar></Navbar>
+      <div>
       <h1>Página no encontrada</h1>
       <p>
         Lo sentimos😔, no hemos podido encontrar la página ingresada
@@ -40,10 +42,13 @@ const NotFoundPage = () => {
         <br />
         <Link to="/">Ir al inicio</Link>.
       </p>
+      </div>
+      			<Footer></Footer>
+
     </main>
   )
 }
 
 export default NotFoundPage
 
-export const Head = () => <title>Aqua Ultra Plus | Tampico · Página no encontrada</title>
+export const Head = () => <title>Purificadora Aqua Ultra Plus | Tampico · Página no encontrada</title>

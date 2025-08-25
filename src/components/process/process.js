@@ -15,14 +15,14 @@ function Process() {
                 <h2>Proceso</h2>
             </div>
             <div>
-                <img className={styles.processImg} src={processImg}></img>
+                <img alt='Proceso purificación de agua' className={styles.processImg} src={processImg}></img>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 justify-center">
                 <div className={styles.stepsColumnContainer}>
                     <div className={styles.stepColumnContainer}>
                         <div>
                             <div className={styles.stepHeaderContainer}>
-                                <img className={styles.numberIcon} src={step1Icon}></img> 
+                                <img alt='Ícono número 1' className={styles.numberIcon} src={step1Icon}></img> 
                                 <h3 className={styles.stepHeader}>Filtro de lecho profundo</h3>
                             </div>
                             <div>
@@ -33,7 +33,7 @@ function Process() {
                     <div className={styles.stepColumnContainer}>
                         <div>
                             <div className={styles.stepHeaderContainer}>
-                                <img className={styles.numberIcon} src={step2Icon}></img> 
+                                <img alt='Ícono número 2' className={styles.numberIcon} src={step2Icon}></img> 
                                 <h3 className={styles.stepHeader}>Filtro de carbón activo</h3>
                             </div>
                             <div>
@@ -44,7 +44,7 @@ function Process() {
                     <div className={styles.stepColumnContainer}>
                         <div>
                             <div className={styles.stepHeaderContainer}>
-                                <img className={styles.numberIcon} src={step3Icon}></img> 
+                                <img alt='Ícono número 3' className={styles.numberIcon} src={step3Icon}></img> 
                                 <h3 className={styles.stepHeader}>Suavizador</h3>
                             </div>
                             <div>
@@ -57,7 +57,7 @@ function Process() {
                     <div className={styles.stepColumnContainer}>
                         <div>
                             <div className={styles.stepHeaderContainer}>
-                                <img className={styles.numberIcon} src={step4Icon}></img> 
+                                <img alt='Ícono número 4' className={styles.numberIcon} src={step4Icon}></img> 
                                 <h3 className={styles.stepHeader}>Ósmosis inversa</h3>
                             </div>
                             <div>
@@ -68,7 +68,7 @@ function Process() {
                     <div className={styles.stepColumnContainer}>
                         <div>
                             <div className={styles.stepHeaderContainer}>
-                                <img className={styles.numberIcon} src={step5Icon}></img> 
+                                <img alt='Ícono número 5' className={styles.numberIcon} src={step5Icon}></img> 
                                 <h3 className={styles.stepHeader}>Filtro pulidor</h3>
                             </div>
                             <div>
@@ -79,7 +79,7 @@ function Process() {
                     <div className={styles.stepColumnContainer}>
                         <div>
                             <div className={styles.stepHeaderContainer}>
-                                <img className={styles.numberIcon} src={step6Icon}></img> 
+                                <img alt='Ícono número 6' className={styles.numberIcon} src={step6Icon}></img> 
                                 <h3 className={styles.stepHeader}>Lámpara Ultravioleta</h3>
                             </div>
                             <div>

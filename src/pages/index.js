@@ -25,11 +25,10 @@ export default IndexPage
 
 export const Head = () => (
 	<>
-		<title>Aqua Ultra Plus | Tampico</title>
+		<title>Purificadora Aqua Ultra Plus | Tampico</title>
 		<meta name="google-site-verification" content="A26tHKjKCnwYUOAUeQOoyvlvap_V9sfvKbu7Vc9qeaA" />
 		<meta 
 			name="description" 
-			content="Aqua Ultra Plus es una purificadora de agua potable con más de 30 años de servicio en Tampico, Tamaulipas. 
-			Ofrecemos venta de agua purificada al público en general en nuestra sucursal, así como servicio a domicilio en tu hogar y oficina o negocio."/>
+			content="Aqua Ultra Plus es una purificadora de agua potable con más de 30 años de servicio en Tampico, Tamaulipas. Haz tu pedido al (833) 314-0412."/>
 	</>
 )
