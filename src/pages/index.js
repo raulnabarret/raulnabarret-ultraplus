@@ -7,8 +7,6 @@ import Location from '../components/location/location';
 import Contact from '../components/contact/contact';
 import Footer from '../components/footer/footer';
 import logo from '../images/Aqua-Logo.png';
-
-const IndexPage = () => {
 	const jsonLd = {
 		"@context": "https://schema.org",
 		"@type": "LocalBusiness",
@@ -31,6 +29,8 @@ const IndexPage = () => {
 			"https://www.facebook.com/AquaUltraPlus",
 		]
 	};
+const IndexPage = () => {
+
 
 	return (
 		<main>
