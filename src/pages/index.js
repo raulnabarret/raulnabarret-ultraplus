@@ -9,6 +9,29 @@ import Footer from '../components/footer/footer';
 import logo from '../images/Aqua-Logo.png';
 
 const IndexPage = () => {
+	const jsonLd = {
+		"@context": "https://schema.org",
+		"@type": "LocalBusiness",
+		"name": "Aqua Ultra Plus",
+		"image": {logo},
+		"@id": "https://aquaultraplus.com",
+		"url": "https://aquaultraplus.com",
+		"telephone": "+52833-314-0412",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "Venustiano Carranza 412",
+			"addressLocality": "Tampico",
+			"addressRegion": "Tamaulipas",
+			"postalCode": "89318",
+			"addressCountry": "MX"
+		},
+		"openingHours": ["Lunes - Viernes 10:00-19:00 ", "Domingo 10:00-14:00 ", "Sábado Cerrado",], 
+		"priceRange": "$",
+		"sameAs": [
+			"https://www.facebook.com/AquaUltraPlus",
+		]
+	};
+
 	return (
 		<main>
 			<Navbar></Navbar>
@@ -38,5 +61,6 @@ export const Head = () => (
 		<meta property="og:type" content="website"/>
 		<meta property="og:image" content={logo}/>
 		<meta property="og:url" content="aquaultraplus.com"/>
+		<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 	</>
 )
