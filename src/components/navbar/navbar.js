@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import * as navbarStyles from "./navbar.module.css"
-import logo from '../images/Aqua-Logo.png';
+import logo from '../../images/Aqua-Logo.png';
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);

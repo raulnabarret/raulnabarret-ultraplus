@@ -1,5 +1,5 @@
 import * as React from "react"
-import Navbar from "../components/navbar"
+import Navbar from "../components/navbar/navbar" 
 import Banner from '../components/banner/banner';
 import Services from "../components/services/services";
 import Process from "../components/process/process";
@@ -7,6 +7,7 @@ import Location from '../components/location/location';
 import Contact from '../components/contact/contact';
 import Footer from '../components/footer/footer';
 import logo from '../images/Aqua-Logo.png';
+
 	const jsonLd = {
 		"@context": "https://schema.org",
 		"@type": "LocalBusiness",
@@ -58,6 +59,8 @@ export const Head = () => (
 		<meta name="twitter:description" content="Aqua Ultra Plus es una purificadora de agua potable con más de 30 años de servicio en Tampico, Tamaulipas." />
 		<meta name="twitter:image" content={logo} />
 		<meta property="og:title" content="Purificadora Aqua Ultra Plus | Tampico"/>
+		<meta property="og:description" content="Aqua Ultra Plus es una purificadora de agua potable con más de 30 años de servicio en Tampico, Tamaulipas."/>
+		<meta  property="og:site_name" content="Purificadora Aqua Ultra Plus"/>
 		<meta property="og:type" content="website"/>
 		<meta property="og:image" content={logo}/>
 		<meta property="og:url" content="aquaultraplus.com"/>
