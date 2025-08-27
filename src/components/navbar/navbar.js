@@ -23,7 +23,6 @@ function Navbar() {
         mobileQuery.addEventListener("change", handleBreakpointChange);
 
         function handleBreakpointChange() {
-            console.log(mobileQuery.matches)
             if (mobileQuery.matches && isMenuOpen) {
                 body.style.overflow = 'scroll';
             } else if (!mobileQuery.matches && isMenuOpen) {

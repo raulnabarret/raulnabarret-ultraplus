@@ -2,6 +2,7 @@ import * as React from "react"
 import Navbar from '../components/navbar/navbar'
 import Footer from '../components/footer/footer';
 import PrivacyPolicy from "../components/privacyPolicy/privacyPolicy";
+import SEO from '../components/seo/seo';
 
 const PoliticaPrivacidadPage = () => {
 	return (
@@ -18,7 +19,6 @@ export default PoliticaPrivacidadPage
 
 export const Head = () => (
 	<>
-		<title>Purificadora Aqua Ultra Plus | Tampico · Política de Privacidad</title>
-		<meta name="google-site-verification" content="A26tHKjKCnwYUOAUeQOoyvlvap_V9sfvKbu7Vc9qeaA" />
+		<SEO title='Purificadora Aqua Ultra Plus Tampico · Política de Privacidad'></SEO>
 	</>
 )
