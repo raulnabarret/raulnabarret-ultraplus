@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Navbar from '../components/navbar/navbar'
 import Footer from '../components/footer/footer';
-import Link from 'gatsby'
+import {Link} from 'gatsby'
 import SEO from '../components/seo/seo';
 
 const NotFoundPage = () => {
