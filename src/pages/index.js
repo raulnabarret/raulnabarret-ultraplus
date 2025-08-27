@@ -27,5 +27,5 @@ const IndexPage = () => {
 export default IndexPage
 
 export const Head = () => (
-	<SEO></SEO>
+	<SEO title='Purificadora Aqua Ultra Plus Tampico'></SEO>
 )
