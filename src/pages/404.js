@@ -45,7 +45,5 @@ const NotFoundPage = () => {
 export default NotFoundPage
 
 export const Head = () => (
-	<>
-		<SEO title='Purificadora Aqua Ultra Plus Tampico · Página no encontrada'></SEO>
-	</>
+	<SEO title='Purificadora Aqua Ultra Plus Tampico · Página no encontrada'></SEO>
 )

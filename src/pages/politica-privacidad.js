@@ -18,7 +18,5 @@ const PoliticaPrivacidadPage = () => {
 export default PoliticaPrivacidadPage
 
 export const Head = () => (
-	<>
-		<SEO title='Purificadora Aqua Ultra Plus Tampico · Política de Privacidad'></SEO>
-	</>
+	<SEO title='Purificadora Aqua Ultra Plus Tampico · Política de Privacidad'></SEO>
 )

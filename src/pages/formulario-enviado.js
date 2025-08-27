@@ -17,7 +17,5 @@ const SuccessPage = () => {
 export default SuccessPage
 
 export const Head = () => (
-	<>
-		<SEO title='Purificadora Aqua Ultra Plus Tampico · Formulario enviado'></SEO>
-	</>
+	<SEO title='Purificadora Aqua Ultra Plus Tampico · Formulario enviado'></SEO>
 )
