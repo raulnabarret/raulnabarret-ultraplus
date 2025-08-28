@@ -2,7 +2,7 @@ import * as React from "react"
 import Navbar from '../components/navbar/navbar'
 import Footer from '../components/footer/footer';
 import PrivacyPolicy from "../components/privacyPolicy/privacyPolicy";
-import SEO from '../components/seo/seo';
+import SEO from '../components/seo';
 
 const PoliticaPrivacidadPage = () => {
 	return (

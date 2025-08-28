@@ -1,21 +1,28 @@
 
 import React from 'react';
-import logo from '../../images/Aqua-Logo.png';
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 
-function SEO ({ title, description }) {
-    const defaultTitle = 'Purificadora Aqua Ultra Plus Tampico';
-    const defaultDescription = 'Aqua Ultra Plus es una purificadora de agua potable con más de 30 años de servicio en Tampico, Tamaulipas. Haz tu pedido al (833) 314-0412.'
-    const seo = {
-        title: title || defaultTitle,
-        description: description || defaultDescription,
-    }
-    const url = 'aquaultraplus.com';
+function SEO ({ title, description, pathname, children }) {
+
+    const { 
+        title: defaultTitle, 
+        description: defaultDescription, 
+        image, 
+        siteUrl 
+    } = useSiteMetadata()
+
+	const seo = {
+		title: title || defaultTitle,
+		description: description || defaultDescription,
+		image: `${siteUrl}${image}`,
+		url: `${siteUrl}${pathname || ``}`,
+	}
 
     const jsonLd = {
 		"@context": "https://schema.org",
 		"@type": "LocalBusiness",
 		"name": "Aqua Ultra Plus",
-		"image": {logo},
+		"image": '',
 		"@id": "https://aquaultraplus.com",
 		"url": "https://aquaultraplus.com",
 		"telephone": "+52833-314-0412",
@@ -39,22 +46,25 @@ function SEO ({ title, description }) {
             <html lang="es" />
             <title>{seo.title}</title>
             <meta name="description" content={seo.description}/>
+            <meta name="image" content={seo.image} />
             {/* Google */}
             <meta name="google-site-verification" content="A26tHKjKCnwYUOAUeQOoyvlvap_V9sfvKbu7Vc9qeaA" />
             {/* Twitter */}
             <meta name="twitter:card" content="summary" />
             <meta name="twitter:title" content={defaultTitle} />
             <meta name="twitter:description" content={defaultDescription} />
-            <meta name="twitter:image" content={logo} />
+            <meta name="twitter:image" content='' />
             {/* Open Graph */}
             <meta property="og:title" content={defaultTitle}/>
             <meta property="og:description" content={defaultDescription}/>
             <meta  property="og:site_name" content={defaultTitle}/>
             <meta property="og:type" content="website"/>
-            <meta property="og:image" content={logo}/>
-            <meta property="og:url" content={url}/>
+            <meta property="og:image" content=''/>
+            <meta property="og:url" content={seo.url}/>
             {/* Microdata */}
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+            <link rel="icon" href={seo.image} />
+            {children} 
         </>
     )
 }

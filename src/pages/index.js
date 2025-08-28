@@ -6,7 +6,7 @@ import Process from "../components/process/process";
 import Location from '../components/location/location';
 import Contact from '../components/contact/contact';
 import Footer from '../components/footer/footer';
-import SEO from '../components/seo/seo';
+import SEO from '../components/seo';
 
 const IndexPage = () => {
 

@@ -2,7 +2,7 @@ import * as React from 'react'
 import Navbar from '../components/navbar/navbar'
 import Success from '../components/success/success' 
 import Footer from '../components/footer/footer';
-import SEO from '../components/seo/seo';
+import SEO from '../components/seo';
 
 const SuccessPage = () => {
 	return (
