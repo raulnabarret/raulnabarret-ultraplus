@@ -53,13 +53,13 @@ function SEO ({ title, description, pathname, children }) {
             <meta name="twitter:card" content="summary" />
             <meta name="twitter:title" content={defaultTitle} />
             <meta name="twitter:description" content={defaultDescription} />
-            <meta name="twitter:image" content='' />
+            <meta name="twitter:image" content={seo.image} />
             {/* Open Graph */}
             <meta property="og:title" content={defaultTitle}/>
             <meta property="og:description" content={defaultDescription}/>
             <meta  property="og:site_name" content={defaultTitle}/>
             <meta property="og:type" content="website"/>
-            <meta property="og:image" content=''/>
+            <meta property="og:image" content={seo.image}/>
             <meta property="og:url" content={seo.url}/>
             {/* Microdata */}
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
